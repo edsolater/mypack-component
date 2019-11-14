@@ -1,0 +1,32 @@
+{
+  "name": "mypack-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "edsolater <edsolater@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.7",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/webpack": "^4.39.8",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "dependenciesComments": {
+    "ts-loader": "桥接器：ts-loader helps Webpack compile your TypeScript code using the TypeScript’s standard configuration file named tsconfig.json",
+    "source-map-loader": "桥接器：source-map-loader uses any sourcemap outputs from TypeScript to inform webpack when generating its own sourcemaps."
+  }
+}

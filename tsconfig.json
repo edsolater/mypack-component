@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "esModuleInterop": true //让使用 module.exports(commonjs语法) 的模块也能使用 import (es 语法) 导入
+  }
+}
