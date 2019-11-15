@@ -1,11 +1,14 @@
-import webpack from 'webpack'
+const webpack = require('webpack')
 
-const config: webpack.Configuration = {
+/**
+ * @type {webpack.Configuration}
+ */
+const config = {
   mode: 'development',
 
   // Enable sourcemaps for debugging webpack's output.
   devtool: 'source-map',
-
+  devServer: { contentBase: './dist', inline: false },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: ['.ts', '.tsx']
@@ -14,9 +17,13 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: 'ts-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       {
@@ -37,4 +44,4 @@ const config: webpack.Configuration = {
   }
 }
 
-export default config
+module.exports = config
