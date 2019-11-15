@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack --display-error-details"
   },
   "keywords": [],
   "author": "edsolater <edsolater@qq.com>",
@@ -35,6 +35,6 @@
   "dependenciesComments": {
     "ts-loader": "桥接器：ts-loader helps Webpack compile your TypeScript code using the TypeScript’s standard configuration file named tsconfig.json",
     "source-map-loader": "桥接器：source-map-loader uses any sourcemap outputs from TypeScript to inform webpack when generating its own sourcemaps.",
-    "fork-ts-checker-webpack-plugin":"用于弥补transpileOnly引起的type-checking缺失"
+    "fork-ts-checker-webpack-plugin": "用于弥补transpileOnly引起的type-checking缺失"
   }
 }
