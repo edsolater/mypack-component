@@ -5,15 +5,8 @@
     "jsx": "react",
     "baseUrl": "./src", //typescript 根路径（绝对路径的根节点）
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "moduleResolution": "node", //可以使用无“/”分割的绝对路径
-    "noImplicitAny": false,
-
-    // "skipLibCheck": true,
-    // "noEmit": true,
-    // "esModuleInterop": true,
-    // "forceConsistentCasingInFileNames": true,
-    // "lib": ["dom", "dom.iterable", "esnext"]
+    "strictNullChecks": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
