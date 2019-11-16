@@ -5,10 +5,12 @@ const webpack = require('webpack')
  */
 const config = {
   mode: 'development',
-
+  entry: {
+    main: './src/example.tsx'
+  },
   // Enable sourcemaps for debugging webpack's output.
   devtool: 'cheap-module-eval-source-map',
-  devServer: { contentBase: ['./dist', './public'], inline: false , },
+  devServer: { contentBase: ['./dist', './public'], inline: false },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: ['.ts', '.tsx'],

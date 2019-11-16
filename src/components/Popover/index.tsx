@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import './Popover.css'
-import { SwitchObject, useSwitcher } from 'myHooks/useSwitcher'
-import { attachWidgetHandlers } from 'myComponentUtil'
+import { SwitchObject, useSwitcher } from 'components/__myHooks/useSwitcher'
+import { attachWidgetHandlers } from 'components/__myComponentUtil'
 
 /**
  * 弹出层内容
