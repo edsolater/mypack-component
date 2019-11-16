@@ -1,10 +1,11 @@
 const webpack = require('webpack')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 /**
  * @type {webpack.Configuration}
  */
 const config = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     main: './src/example.tsx'
   },
@@ -14,14 +15,14 @@ const config = {
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: ['.ts', '.tsx'],
-    modules: ['./src'] //typescript 识别根路径（绝对路径的根节点）
+    modules: ['src', 'node_modules'] //typescript 识别根路径（绝对路径的根节点）
   },
 
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         use: {
           loader: 'ts-loader',
           options: {
@@ -45,6 +46,7 @@ const config = {
       }
     ]
   },
+  plugins: [new BundleAnalyzerPlugin()],
   // When importing a module whose path matches one of the following, just
   // assume a corresponding global variable exists and use that instead.
   // This is important because it allows us to avoid bundling all of our

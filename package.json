@@ -25,16 +25,19 @@
     "ts-node": "^8.5.0",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "mypack-utilities": "github:edsolater/mypack-utilities",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
   "dependenciesComments": {
     "ts-loader": "桥接器：ts-loader helps Webpack compile your TypeScript code using the TypeScript’s standard configuration file named tsconfig.json",
     "source-map-loader": "桥接器：source-map-loader uses any sourcemap outputs from TypeScript to inform webpack when generating its own sourcemaps.",
-    "fork-ts-checker-webpack-plugin": "用于弥补transpileOnly引起的type-checking缺失"
+    "fork-ts-checker-webpack-plugin": "用于弥补transpileOnly引起的type-checking缺失",
+    "mypack-utilities": "主要是为了导出各种工具函数"
   }
 }
